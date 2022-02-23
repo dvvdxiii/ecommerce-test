@@ -6,11 +6,4 @@ function MyApp({ Component, pageProps }) {
   
 }
 
-function Products({ Component, pageProps}) {
-  fetch('https://fakestoreapi.com/products/1')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-return <Component {...pageProps}/>
-}
-
 export default MyApp
